@@ -48,7 +48,6 @@ def make():
     "-skip", "qt3d",
     "-skip", "qtwebview",
     "-skip", "qtwebengine",
-    "-xplatform", "win32-arm64-msvc2017",
     "-mp",
     "-no-pch"]
 
