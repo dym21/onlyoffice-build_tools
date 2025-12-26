@@ -23,7 +23,7 @@ def get_vs_path(version = "2019"):
   return vs_path
 
 def make():
-  qt_build_path = os.path.dirname(os.path.abspath(__file__)) + "/qt_build/Qt-5.15.2/win_arm64"
+  qt_build_path = os.path.dirname(os.path.abspath(__file__)) + "/../../../../qt_build/Qt-5.15.2/win_x64"
   qt_params = ["-opensource",
     "-confirm-license",
     "-release",
@@ -48,7 +48,6 @@ def make():
     "-skip", "qt3d",
     "-skip", "qtwebview",
     "-skip", "qtwebengine",
-    "-xplatform", "win32-arm64-msvc2017",
     "-mp",
     "-no-pch"]
 
